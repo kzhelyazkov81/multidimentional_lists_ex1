@@ -34,6 +34,8 @@ for command in commands:
     if matrix[miner_row][miner_col] == 'c':
         coals_count -= 1
         matrix[miner_row][miner_col] = '*'
+        if coals_count == 0:
+            break
     if matrix[miner_row][miner_col] == 'e':
         end = True
         break
